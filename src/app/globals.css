@@ -2,4 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes upToDown {
+    0% {
+        opacity: 10%;
+    }
 
+    100% {
+        opacity: 100%;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
