@@ -1,15 +1,18 @@
 'use client';
 import dynamic from "next/dynamic";
 import Service from "@/component/services";
-import ClientComponent from "@/component/clientComponent";
+import ServerComponent from "@/component/serverComponent";
 import Hero from "@/component/hero";
+
+
 
 const Page = () => {
   return (
     <>
-      <ClientComponent>
-        <Hero/>
-      </ClientComponent>
+      <ServerComponent>
+        <Hero />
+      </ServerComponent>
+      
       <Service/>
     </>
   );

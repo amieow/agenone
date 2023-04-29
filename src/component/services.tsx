@@ -42,7 +42,7 @@ const Service = () : JSX.Element => {
         return false;
     }
     return (
-        <section className="my-14 h-screen max-h-[900px] mx-6 ">
+        <section id="service" className="my-14 h-screen max-h-[900px] mx-6 scroll-smooth">
             <div className="mb-9">
                 <h3 className="font-bold text-5xl tracking-[-0.02em] text-center leading-[44px] text-black">The Services We Offer <span className="bg-gradient-to-l from-teal-600 to-green-500 text-transparent bg-clip-text">For You</span></h3>
             </div>
@@ -51,11 +51,11 @@ const Service = () : JSX.Element => {
                     const isOpen = index === openItemIndex;
 
                     return (
-                        <div key={index} className="bg-[#F8F8F8] p-6 rounded-xl transition-all">
+                        <div key={index} className="bg-[#F8F8F8] p-6 rounded-xl transition-all h-fit">
                             <div className="flex transition-all">
-                                <p className={`text-xl font-bold p-1 mr-2 transition-all ${isOpen ? 'bg-gradient-to-l from-teal-600 to-green-500 text-transparent bg-clip-text' : ''}`}>{index + 1}</p>
-                                <p className={`text-xl font-bold my-auto transition-all ${isOpen ? 'bg-gradient-to-l from-teal-600 to-green-500 text-transparent bg-clip-text' : ''}`}>{item.title}</p>
-                                <button className={`ml-auto my-auto transition-all `} onClick={() => toggleItem(index)}>
+                                <p className={`text-xl font-bold p-1 mr-2 transition-all duration-300 ${isOpen ? 'bg-gradient-to-l from-teal-600 to-green-500 text-transparent bg-clip-text' : ''}`}>{index + 1}</p>
+                                <p className={`text-xl font-bold my-auto transition-all duration-300 ${isOpen ? 'bg-gradient-to-l from-teal-600 to-green-500 text-transparent bg-clip-text' : ''}`}>{item.title}</p>
+                                <button className="ml-auto my-auto transition-all" onClick={() => toggleItem(index)}>
                                     <i className={`fa-solid fa-arrow-right transition-all transform ${isOpen ? 'rotate-90 bg-gradient-to-l from-teal-600 to-green-500 text-transparent bg-clip-text' : ''}`}></i>
                                 </button>
                             </div>

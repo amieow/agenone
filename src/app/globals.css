@@ -2,21 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes upToDown {
-    0% {
-        opacity: 10%;
-    }
-
-    100% {
-        opacity: 100%;
-    }
+* {
+    scroll-behavior: smooth;
 }
-@keyframes fadeOut {
+a:hover span:first-of-type {
+    width: 100%;
+    transform-origin: left;
+    animation: border-left-to-right 1s forwards;
+}
+
+@keyframes border-left-to-right {
     0% {
-        opacity: 1;
+        transform: scaleX(0);
     }
 
     100% {
-        opacity: 0;
+        transform: scaleX(1);
     }
+    
 }
