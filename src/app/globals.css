@@ -11,6 +11,11 @@ a:hover span:first-of-type {
     animation: border-left-to-right 1s forwards;
 }
 
+.achievement {
+    background: linear-gradient(279.69deg, rgba(0, 121, 109, 0.1) 0%, rgba(56, 198, 130, 0.1) 100%);
+}
+
+
 @keyframes border-left-to-right {
     0% {
         transform: scaleX(0);

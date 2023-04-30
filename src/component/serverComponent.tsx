@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 
 
- function ServerComponent({
+function ServerComponent({
     children,
 }: {
     children: React.ReactNode

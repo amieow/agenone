@@ -1,5 +1,4 @@
 
-import Hero from '@/component/hero'
 import './globals.css'
 export const metadata = {
   

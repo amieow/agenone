@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic";
-import { useState,useEffect } from "react";
+import { useState } from "react";
 
 
 const Service = () : JSX.Element => {
@@ -32,15 +32,6 @@ const Service = () : JSX.Element => {
             description: "Quis nisi do et ut est. Duis et minim cupidatat mollit reprehenderit ipsum officia. Culpa velit ullamco elit officia occaecat nulla duis in."
         }
     ]
-    
-    function Visible(index: number, ): boolean {
-        const targetElement = document.querySelector(`#more-info-${index}`);
-        if (targetElement) {
-            targetElement.classList.toggle("hidden");
-            return true;
-        }
-        return false;
-    }
     return (
         <section id="service" className="my-14 h-screen max-h-[900px] mx-6 scroll-smooth">
             <div className="mb-9">
@@ -49,13 +40,12 @@ const Service = () : JSX.Element => {
             <div className=" flex flex-col gap-4">
                 {About.map((item, index) => {
                     const isOpen = index === openItemIndex;
-
                     return (
                         <div key={index} className="bg-[#F8F8F8] p-6 rounded-xl transition-all h-fit">
                             <div className="flex transition-all">
                                 <p className={`text-xl font-bold p-1 mr-2 transition-all duration-300 ${isOpen ? 'bg-gradient-to-l from-teal-600 to-green-500 text-transparent bg-clip-text' : ''}`}>{index + 1}</p>
                                 <p className={`text-xl font-bold my-auto transition-all duration-300 ${isOpen ? 'bg-gradient-to-l from-teal-600 to-green-500 text-transparent bg-clip-text' : ''}`}>{item.title}</p>
-                                <button className="ml-auto my-auto transition-all" onClick={() => toggleItem(index)}>
+                                <button aria-label="" className="ml-auto my-auto transition-all" onClick={() => toggleItem(index)}>
                                     <i className={`fa-solid fa-arrow-right transition-all transform ${isOpen ? 'rotate-90 bg-gradient-to-l from-teal-600 to-green-500 text-transparent bg-clip-text' : ''}`}></i>
                                 </button>
                             </div>
@@ -68,7 +58,6 @@ const Service = () : JSX.Element => {
                         </div>
                     )
                 })}
-
             </div>
         </section>
     )
