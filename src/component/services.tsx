@@ -33,7 +33,8 @@ const Service = () : JSX.Element => {
         }
     ]
     return (
-        <section id="service" className="my-14 h-screen max-h-[900px] mx-6 scroll-smooth">
+        <section id="service" className="my-14 h-full min-h-screen mx-6 scroll-smooth">
+            
             <div className="mb-9">
                 <h3 className="font-bold text-5xl tracking-[-0.02em] text-center leading-[44px] text-black">The Services We Offer <span className="bg-gradient-to-l from-teal-600 to-green-500 text-transparent bg-clip-text">For You</span></h3>
             </div>

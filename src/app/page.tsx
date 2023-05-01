@@ -9,10 +9,9 @@ import Project from "@/component/Project";
 const Page = () => {
   return (
     <div className="overflow-x-hidden">
-      
       <ServerComponent>
         <Hero/>
-      <Services/>
+        <Services/>
         <Achievement/>
         <Project/>
       </ServerComponent>

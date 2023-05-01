@@ -24,7 +24,7 @@ export default function Achievement() {
         },
     ]
     return (
-        <div className="achievement gap-9 flex flex-col h-screen px-6 py-14 md:h-fit md:p-[60px] lg:p-[80px] md:gap-16">
+        <div className="achievement gap-9 flex flex-col min-h-full px-6 py-14 md:h-fit md:p-[60px] lg:p-[80px] md:gap-16">
             <div className="">
                 <p className="font-medium font-['inter'] text-2xl md:text-3xl lg:text-[44px] lg:leading-[52px]">We are passionate about helping businesses grow and succeed in the digital age. We take pride in our work and strive to exceed your expectations every time.</p>
             </div>
