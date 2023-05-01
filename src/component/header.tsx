@@ -29,7 +29,11 @@ export default memo(function Header(): JSX.Element {
     ];
     return (
         <header>
-            <nav className="flex p-5 md:px-10 justify-between transition-all md:justify-around 975:justify-between ">
+            <div className="absolute top-[-325px] left-[-282px] z-0 max-[370px]:hidden">
+                <div className="bg-white min-w-[650px] min-h-[650px] rounded-[50%] blur-[290px] opacity-[8%]"></div>
+            </div>
+            <nav className="flex p-5 md:px-10 justify-between transition-all md:justify-around 975:justify-between z-10 ">
+                
                 <div className="flex text-white md:my-auto">
                     <svg
                         width="52"
@@ -95,15 +99,15 @@ export default memo(function Header(): JSX.Element {
                 <div
                     className={`${
                         open &&
-                        "fixed flex top-[100px] w-[75%] bg-[#0c111fb2] left-0 "
-                    } ${mobileOpen && " left-[-70%]"} md:static md:w-fit`}
+                        "fixed flex z-50 top-[100px] w-[75%] bg-[#0c111fb2] left-0 "
+                    } ${mobileOpen && " left-[-70%]"} transition-all duration-200 ease-out md:static md:w-fit md:bg-opacity-0`}
                 >
                     <ul
                         className={`${
                             open
                                 ? " transition-all w-full"
                                 : "hidden static right-[-70%]"
-                        } py-3 justify-around md:static max-md:divide-y-2  mx-auto md:w-[502px] md:flex`}
+                        } py-3 justify-around md:static max-md:divide-y-2  mx-auto md:w-[502px] md:flex md:bg-opacity-0`}
                     >
                         {menu.map((item, index) => {
                             return (
@@ -143,7 +147,7 @@ export default memo(function Header(): JSX.Element {
                         setOpen(!open);
                         setMobile(false);
                     }}
-                    className="flex justify-around p-2 ring-2 ring-white w-8 h-8 rounded-lg flex-col hover:cursor-pointer hover:shadow-lg md:hidden"
+                    className="flex justify-around p-2 ring-2 ring-white w-8 h-8 rounded-lg flex-col hover:cursor-pointer hover:shadow-lg md:hidden z-10"
                 >
                     <div className="bg-white w-full h-1 m-auto rounded-sm"></div>
                     <div className="bg-white w-full h-1 m-auto rounded-sm"></div>

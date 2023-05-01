@@ -1,4 +1,5 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+this project is the result for slicing ui in this [`figma`](https://www.figma.com/file/ieG9qaL17HcPdQxRPDPD6l/Agenone---Creative-Digital-Agency-Landing-Page-(Community)?node-id=171-1384&t=sdxbKTXIAP12G215-0)
 
 ## Getting Started
 
