@@ -5,15 +5,19 @@ import ServerComponent from "@/component/serverComponent";
 import Hero from "@/component/hero";
 import Services from "@/component/services";
 import Project from "@/component/Project";
+import TrustedCompany from "@/component/trustedCompany";
+
 
 const Page = () => {
   return (
     <div className="overflow-x-hidden">
+      
       <ServerComponent>
         <Hero/>
         <Services/>
         <Achievement/>
         <Project/>
+        <TrustedCompany/>
       </ServerComponent>
       
     </div> 

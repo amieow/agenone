@@ -34,7 +34,7 @@ export default memo(function Header(): JSX.Element {
             </div>
             <nav className="flex p-5 md:px-10 justify-between transition-all md:justify-around 975:justify-between z-10 ">
                 
-                <div className="flex text-white md:my-auto">
+                <div className="flex text-white md:my-auto z-10">
                     <svg
                         width="52"
                         height="34"
@@ -99,15 +99,15 @@ export default memo(function Header(): JSX.Element {
                 <div
                     className={`${
                         open &&
-                        "fixed flex z-50 top-[100px] w-[75%] bg-[#0c111fb2] left-0 "
-                    } ${mobileOpen && " left-[-70%]"} transition-all duration-200 ease-out md:static md:w-fit md:bg-opacity-0`}
+                        "fixed flex z-50 top-[100px] w-[75%] max-md:bg-[#0c111fb2] left-0 "
+                    } ${mobileOpen && " left-[-70%]"} transition-all duration-200 ease-out md:static md:w-fit `}
                 >
                     <ul
                         className={`${
                             open
-                                ? " transition-all w-full"
+                                ? " transition-all w-full "
                                 : "hidden static right-[-70%]"
-                        } py-3 justify-around md:static max-md:divide-y-2  mx-auto md:w-[502px] md:flex md:bg-opacity-0`}
+                        } py-3 justify-around md:static max-md:divide-y-2  mx-auto md:w-[502px] md:flex `}
                     >
                         {menu.map((item, index) => {
                             return (
