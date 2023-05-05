@@ -1,93 +1,12 @@
 "use client";
 
+import { jenisProject } from "@/app/asset/data";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import { useState } from "react";
 
 function Project() {
     const [showContent, setShowContent] = useState(0);
-    const jenisProject = [
-        {
-            title: "UI/UX",
-            content: [
-                {
-                    url: "https://media.discordapp.net/attachments/942221935562088459/1086621165432361021/image.png?width=1242&height=631",
-                    alt: "",
-                    title: "Title",
-                    desc: "We are designed to help your business thrive in the online world.",
-                },
-                {
-                    url: "https://media.discordapp.net/attachments/942221935562088459/1086717547203809301/image.png?width=1254&height=631",
-                    alt: "",
-                    title: "Title",
-                    desc: "We are designed to help your business thrive in the online world.",
-                },
-            ],
-        },
-        {
-            title: "Digital",
-            content: [
-                {
-                    url: "https://media.discordapp.net/attachments/942221935562088459/1086717547203809301/image.png?width=1254&height=631",
-                    alt: "",
-                    title: "Title",
-                    desc: "We are designed to help your business thrive in the online world.",
-                },
-            ],
-        },
-        {
-            title: "SMM",
-            content: [
-                {
-                    url: "https://media.discordapp.net/attachments/942221935562088459/1086717547203809301/image.png?width=1254&height=631",
-                    alt: "",
-                    title: "Title",
-                    desc: "We are designed to help your business thrive in the online world.",
-                },
-                {
-                    url: "https://media.discordapp.net/attachments/942221935562088459/1086621165432361021/image.png?width=1242&height=631",
-                    alt: "",
-                    title: "Title",
-                    desc: "We are designed to help your business thrive in the online world.",
-                },
-                {
-                    url: "https://media.discordapp.net/attachments/942221935562088459/1086718591900065872/image.png?width=1241&height=631",
-                    alt: "",
-                    title: "Title",
-                    desc: "We are designed to help your business thrive in the online world.",
-                },
-            ],
-        },
-        {
-            title: "Dev",
-            content: [
-                {
-                    url: "https://media.discordapp.net/attachments/942221935562088459/1086621165432361021/image.png?width=1242&height=631",
-                    alt: "",
-                    title: "Title",
-                    desc: "We are designed to help your business thrive in the online world.",
-                },
-                {
-                    url: "https://media.discordapp.net/attachments/942221935562088459/1086717547203809301/image.png?width=1254&height=631",
-                    alt: "",
-                    title: "Title",
-                    desc: "We are designed to help your business thrive in the online world.",
-                },
-                {
-                    url: "https://media.discordapp.net/attachments/942221935562088459/1086718591900065872/image.png?width=1241&height=631",
-                    alt: "",
-                    title: "Title",
-                    desc: "We are designed to help your business thrive in the online world.",
-                },
-                {
-                    url: "https://media.discordapp.net/attachments/942221935562088459/1086717547203809301/image.png?width=1254&height=631",
-                    alt: "",
-                    title: "Title",
-                    desc: "We are designed to help your business thrive in the online world.",
-                },
-            ],
-        },
-    ];
     return (
         <section id="project" className=" bg-gray-900 h-full min-h-screen pb-8">
             <svg

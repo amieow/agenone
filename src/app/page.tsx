@@ -6,11 +6,12 @@ import Hero from "@/component/hero";
 import Services from "@/component/services";
 import Project from "@/component/Project";
 import TrustedCompany from "@/component/trustedCompany";
+import Testimoni from "@/component/testimoni";
 
 
 const Page = () => {
   return (
-    <div className="overflow-x-hidden">
+    <main className="overflow-x-hidden">
       
       <ServerComponent>
         <Hero/>
@@ -18,9 +19,9 @@ const Page = () => {
         <Achievement/>
         <Project/>
         <TrustedCompany/>
+        <Testimoni/>
       </ServerComponent>
-      
-    </div> 
+    </main> 
   );
 };
 

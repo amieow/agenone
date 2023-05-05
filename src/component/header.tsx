@@ -1,32 +1,11 @@
 "use client";
 
+import { Menu} from "@/app/asset/data" ;
 import { memo, useState } from "react";
 
 export default memo(function Header(): JSX.Element {
     const [open, setOpen] = useState(false);
     const [mobileOpen, setMobile] = useState(false);
-    type menuType = {
-        title: string;
-        link: string;
-    };
-    const menu: menuType[] = [
-        {
-            title: "Home",
-            link: "#hero",
-        },
-        {
-            title: "Service",
-            link: "#service",
-        },
-        {
-            title: "Project",
-            link: "#project",
-        },
-        {
-            title: "About Us",
-            link: "",
-        },
-    ];
     return (
         <header>
             <div className="absolute top-[-325px] left-[-282px] z-0 max-[370px]:hidden">
@@ -109,7 +88,7 @@ export default memo(function Header(): JSX.Element {
                                 : "hidden static right-[-70%]"
                         } py-3 justify-around md:static max-md:divide-y-2  mx-auto md:w-[502px] md:flex `}
                     >
-                        {menu.map((item, index) => {
+                        {Menu.map((item, index) => {
                             return (
                                 <li
                                     key={index}
