@@ -1,28 +1,6 @@
-
+import { achievement } from "@/app/asset/data"
 
 export default function Achievement() {
-    type achievementType = {
-        jum : string,
-        desc : string
-    }
-    const achievement : achievementType[] = [
-        {
-        jum : '10',
-        desc : 'Years of Experiences'
-        },
-        {
-        jum : '666',
-        desc : 'Project Completed'
-        },
-        {
-        jum : '555',
-        desc : 'Satisfied Client'
-        },
-        {
-        jum : '10',
-        desc : 'Awards Achieved'
-        },
-    ]
     return (
         <div className="achievement gap-9 flex flex-col min-h-full px-6 py-14 md:h-fit md:p-[60px] lg:p-[80px] md:gap-16">
             <div className="">

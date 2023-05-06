@@ -5,10 +5,8 @@ import React from 'react'
 export default function Testimoni() {
     return (
         <section id='Testimonial' className="max-h-[800px] overflow-y-hidden flex justify-around ">
-            <div className="overflow-y-scroll flex flex-col gap-5 w-fit no-scrollbar">
-                <div className="relative">
-                    <div className='sticky bg-blue-300 w-full h-4 bottom-0 blur-xl'></div>
-                </div>
+            <div className="overflow-y-scroll flex flex-col gap-5 w-fit no-scrollbar relative">
+                <div className='absolute bg-blue-300 w-full h-4 top-0 blur-xl'></div>
                 {[...Testimonial, ...Testimonial.slice().reverse()].slice().reverse().map((item,index) => {
                     return (
                         <div className="w-[327px] bg-gray-100 p-6 mx-auto group hover:bg-gradient-to-br hover:from-teal-600 hover:to-green-500 hover:transition-all duration-300 rounded-xl lg:w-[408px] min-[1440px]:w-[578px] min-[1440px]:p-6" key={index}>

@@ -7,6 +7,7 @@ import Services from "@/component/services";
 import Project from "@/component/Project";
 import TrustedCompany from "@/component/trustedCompany";
 import Testimoni from "@/component/testimoni";
+import Warning from "@/component/warning";
 
 
 const Page = () => {
@@ -14,6 +15,7 @@ const Page = () => {
     <main className="overflow-x-hidden">
       
       <ServerComponent>
+        <Warning/>
         <Hero/>
         <Services/>
         <Achievement/>

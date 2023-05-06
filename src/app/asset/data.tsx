@@ -153,3 +153,22 @@ export let Testimonial = [
         }
     }
 ]
+
+export const achievement = [
+        {
+        jum : '10',
+        desc : 'Years of Experiences'
+        },
+        {
+        jum : '666',
+        desc : 'Project Completed'
+        },
+        {
+        jum : '555',
+        desc : 'Satisfied Client'
+        },
+        {
+        jum : '10',
+        desc : 'Awards Achieved'
+        },
+    ]
