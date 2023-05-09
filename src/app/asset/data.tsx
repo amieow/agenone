@@ -88,11 +88,11 @@ export const About = [
         },
         {
             title: "Digital Marketing",
-            description: "Ullamco aliqua duis pariatur elit officia nisi anim fugiat sint eiusmod. Minim reprehenderit et in reprehenderit. Consectetur dolore deserunt mollit aute sunt velit ut consectetur. Culpa irure non dolore duis anim enim amet tempor."
+            description: "Veniam elit sunt veniam reprehenderit mollit consectetur excepteur ullamco qui labore qui aute."
         },
         {
             title: "Social Media Management",
-            description: "Ad aute qui magna amet. Cillum cillum ea sint labore. Qui dolore enim elit laborum dolore fugiat id sint minim nulla ullamco elit minim. Est nisi cupidatat dolor ea exercitation anim irure voluptate ad aliquip aute."
+            description: "Veniam elit sunt veniam reprehenderit mollit consectetur excepteur ullamco qui labore qui aute."
         },
         {
             title: "Development",

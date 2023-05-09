@@ -14,7 +14,7 @@ export default function Warning() {
     }, []);
 
     return (
-        <div className={` bg-black bg-opacity-75 ${show ? 'w-screen h-screen fixed z-[70]' : 'hidden'}`}>
+        <div className={` bg-black bg-opacity-75 ${show ? 'w-screen h-screen fixed z-[70]' : 'hidden -z-10'}`}>
             <div className="bg-white flex flex-col rounded-lg w-80 h-60 m-auto mt-80">
                 <div className="relative flex">
                     <div className="absolute w-28 h-28 bg-teal-600 opacity-25 rounded-full"></div>

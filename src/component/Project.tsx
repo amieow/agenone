@@ -10,7 +10,7 @@ function Project() {
     return (
         <section id="project" className=" bg-gray-900 h-full min-h-screen pb-8">
             <svg
-                className="absolute z-0 min-[1440px]:hidden rotate-180"
+                className="absolute object-cover z-0 min-[1440px]:hidden rotate-180"
                 width="100%"
                 height="100%"
                 viewBox="0 0 375 706"
@@ -70,7 +70,7 @@ function Project() {
                 </defs>
             </svg>
             <svg
-                className="hidden absolute rotate-180 min-[1440px]:block"
+                className="hidden object-cover absolute rotate-180 min-[1440px]:block"
                 width="100%"
                 height="100%"
                 viewBox="0 0 1440 1120"
@@ -145,7 +145,7 @@ function Project() {
                 </defs>
             </svg>
             <svg
-                className="absolute rotate-180 z-0"
+                className="absolute object-cover rotate-180 z-0"
                 width="100%"
                 height="30%"
                 viewBox="0 0 222 245"
@@ -184,16 +184,16 @@ function Project() {
                     </p>
                 </div>
 
-                <div className="bg-white  flex w-fit mx-auto z-10 rounded-[100px] p-1 flex-wrap max-[350px]:justify-around ">
+                <div className="bg-white rounded-xl  flex flex-col w-full min-[350px]:w-fit mx-auto z-10 min-[350px]:rounded-[100px] min-[350px]:p-1 min-[350px]:flex-row   max-[350px]:justify-around ">
                     {jenisProject.map((item, index) => {
                         return (
                             <button
                                 onClick={() => setShowContent(index)}
                                 key={index}
-                                className={`rounded-[100px] transition-all z-10 ${
+                                className={`min-[350px]:rounded-[100px] rounded-xl transition-all z-10 ${
                                     showContent == index &&
                                     "bg-gradient-to-l from-teal-600 to-green-500 text-white"
-                                } p-2 px-6 w-fit md:w-[90px] lg:p-3 lg:w-[150px]`}
+                                } p-2 px-6 min-[350px]:w-fit md:w-[90px] lg:p-3 lg:w-[150px]`}
                             >
                                 {item.title}
                             </button>
@@ -211,7 +211,7 @@ function Project() {
                         >
                             <div className="z-10 peer cursor-pointer">
                                 <Image
-                                    className="w-full h-[300px] z-10 max-h-[579px] object-fill rounded-2xl mx-auto"
+                                    className="w-full h-[300px] z-10 max-h-[579px] object-cover rounded-2xl mx-auto"
                                     src={item.url}
                                     alt={item.alt}
                                     width={200}

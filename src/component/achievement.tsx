@@ -1,6 +1,7 @@
 import { achievement } from "@/app/asset/data"
+import dynamic from "next/dynamic";
 
-export default function Achievement() {
+function Achievement() {
     return (
         <div className="achievement gap-9 flex flex-col min-h-full px-6 py-14 md:h-fit md:p-[60px] lg:p-[80px] md:gap-16">
             <div className="">
@@ -21,3 +22,5 @@ export default function Achievement() {
         </div>
     )
 }
+
+export default dynamic(() => Promise.resolve(Achievement), { ssr: false });
