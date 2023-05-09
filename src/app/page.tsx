@@ -1,30 +1,14 @@
 'use client';
-import dynamic from "next/dynamic";
-import Achievement from "@/component/achievement";
-import ServerComponent from "@/component/serverComponent";
-import Hero from "@/component/hero";
-import Services from "@/component/services";
-import Project from "@/component/Project";
-import TrustedCompany from "@/component/trustedCompany";
-import Testimoni from "@/component/testimoni";
-import Warning from "@/component/warning";
+
+import Service from "@/component/services";
 
 
 const Page = () => {
   return (
-    <main className="overflow-x-hidden">
-      
-      <ServerComponent>
-        <Warning/>
-        <Hero/>
-        <Services/>
-        <Achievement/>
-        <Project/>
-        <TrustedCompany/>
-        <Testimoni/>
-      </ServerComponent>
-    </main> 
+    <>
+      <Service/>
+    </>
   );
 };
 
-export default dynamic(() => Promise.resolve(Page))
+export default Page;
